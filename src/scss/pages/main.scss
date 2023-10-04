@@ -1,0 +1,54 @@
+.top-section {
+  position: relative;
+
+  // max-height: 100%;
+  max-height: 100vh;
+  min-width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 1599px) {
+    max-height: 100%;
+  }
+
+  @media (max-width: 1023px) {
+    height: 576px;
+  }
+
+  @media (max-width: 767px) {
+    height: 432px;
+  }
+
+  &__video {
+    position: relative;
+    padding-bottom: 56.25%;
+
+    @media (max-width: 1023px) {
+      width: 1023px;
+    }
+
+    @media (max-width: 767px) {
+      width: 767px;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+
+    width: 100%;
+
+    @media (max-width: 1279px) {
+      bottom: 50px;
+    }
+  }
+}

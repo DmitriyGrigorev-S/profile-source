@@ -1,0 +1,25 @@
+/* style plugins*/
+@import '../../node_modules/swiper/swiper-bundle.min';
+
+@import 'config/*.scss';
+
+@import 'base/fonts.scss';
+@import 'base/reset.scss';
+@import 'base/base.scss';
+@import 'base/typography.scss';
+// @import 'base/grid.scss';
+@import 'base/icon.scss';
+
+@import 'helpers/*.scss';
+
+@import 'vendors/*.scss';
+@import 'ui/*.scss'; 
+@import 'common/*.scss';
+@import 'components/*.scss';
+@import 'sections/*.scss';
+@import 'pages/*.scss';
+
+@import '../components/**/*.scss';
+
+/*other cstyle */
+@import 'popup/*.scss';

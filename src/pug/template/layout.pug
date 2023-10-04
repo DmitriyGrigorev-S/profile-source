@@ -1,0 +1,30 @@
+include ../config/mixins
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(content="" name="author")
+    meta(content="" name="description")
+    meta(content="" name="keywords")
+    meta(content="width=device-width, user-scalable=0, minimal-ui" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    meta(http-equiv="Cache-Control" content="max-age=3600, must-revalidate")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+    
+    link(rel="stylesheet" href="./css/style.min.css")
+    script(defer src="./js/script.min.js") 
+
+    block variables
+    title #{title}
+
+  body
+    .page
+
+      include ../../components/header/header.pug
+
+      main
+        block content
+
+      include ../../components/footer/footer.pug

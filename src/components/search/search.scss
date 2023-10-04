@@ -1,0 +1,17 @@
+.search {
+
+  &__btn {
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    .icon {
+        display: block;
+    }
+  }
+
+  &__dropdown {
+    display: none;
+  }
+}

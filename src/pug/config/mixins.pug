@@ -1,0 +1,11 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+	- mainPath = `./assets/images/`
+	svg(aria-hidden="true" class="icon icon-" + name + ' ' + mod)
+		use(xlink:href=`${mainPath}svg/sprite/sprite.svg#` + name)
+
+mixin breadcrumbs(...items)
+	ul.breadcrumbs
+		each item in items
+			li.breadcrumbs__item 
+				a.breadcrumbs__link(href="#")= item

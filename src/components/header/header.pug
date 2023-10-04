@@ -1,0 +1,47 @@
+header.header
+  .container
+    .header__inner
+      .header__burger-inner
+        +logo({
+          class: 'header__logo'
+        })
+        +burger({
+          class: 'header__burger'
+        })
+      +menu({
+        class: 'header__menu',
+        items: [
+          {text: 'Производство'},
+          {text: 'Проекты'},
+          {text: 'О компании'},
+          {text: 'Контакты'}
+        ]
+      })
+      +button({
+        class: 'button--small header__shop',
+        typeButton: 'link',
+        text: 'интернет магазин',
+        icon: 'cart'
+      })
+      .header__action
+        +search()
+        +dropdown({
+          head: {
+            text: '+7 (727) 232 93 60'
+          },
+          body: [
+            {text: '+7 (645) 654 23 30'},
+            {text: '+7 (978) 232 93 54'}
+          ]
+        })
+        +dropdown({
+          class: 'dropdown--uppercase',
+          head: {
+            text: 'Каз'
+          },
+          body: [
+            {text: 'РУС'},
+            {text: 'EN'}
+          ]
+        })
+        

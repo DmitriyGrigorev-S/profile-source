@@ -1,0 +1,45 @@
+/* color */
+$color-white: #ffffff;
+$color-black: #000000;
+$color-red: #F35353;
+
+// path images
+$img: './assets/images' !default;
+
+/* grid */
+$grid-indent: 60px;
+$container: 1516px;
+
+/* fonts */
+$font-montserrat: 'Montserrat', sans-serif;
+$font-inter: 'Inter', sans-serif;
+
+$font-base: $font-montserrat;
+$font-base-size: 16px;
+$font-base-lineheight: 1.2;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+/* headings */
+$headings-font-family: $font-montserrat !default;
+$headings-font-weight: $font-weight-bold !default;
+$headings-line-height: 1.2 !default;
+$headings-color: $color-black !default;
+
+/* transition */
+$transition: all 0.25s ease;
+
+/* UI */
+$color-hover: $color-red;
+
+/* breakpoint */
+$xs: 480px;
+$sm: 768px;
+$tab: 1024px;
+$md: 1280px;
+$lg: 1440px;
+$xlg: 1600px;

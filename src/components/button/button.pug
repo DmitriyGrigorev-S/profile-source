@@ -1,0 +1,18 @@
+mixin button(data)
+    - var typeButton = data.typeButton ? data.typeButton : 'link'
+    
+    if (typeButton === 'link')
+        if (data.icon)
+            a.button(href= data.href class= data.class)
+                +icon(data.icon)
+                span= data.text
+        else 
+            a.button(href= data.href class= data.class)= data.text
+            
+    if (typeButton === 'button')
+        if (data.icon)
+            button.button(type= data.type class= data.class)
+                +icon(data.icon)
+                span= data.text
+        else 
+            button.button(type= data.type class= data.class)= data.text

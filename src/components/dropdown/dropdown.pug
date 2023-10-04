@@ -1,0 +1,7 @@
+mixin dropdown(data)
+    .dropdown(class= data.class)
+        .dropdown__head= data.head.text
+
+        .dropdown__body
+            each item in data.body
+                .dropdown__body-item= item.text

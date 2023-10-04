@@ -1,0 +1,138 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: 40px;
+  line-height: 45px;
+
+  @include media-max($md) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  @include media-max($tab) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @include media-max($sm) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @include media-max($xs) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 30px;
+  line-height: 33px;
+
+  @include media-max($md) {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  @include media-max($tab) {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 25px;
+  line-height: 28px;
+}
+
+h4,
+.h4 {
+  font-size: 21px;
+  line-height: 24px;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 36px;
+
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+
+  @include media-max($md) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include media-max($tab) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include media-max($sm) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include media-max($xs) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  & + & {
+    margin: 20px 0 0;
+
+    @include media-max($tab) {
+      margin: 15px 0 0;
+    }
+
+    @include media-max($xs) {
+      margin: 10px 0 0;
+    }
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a[href^='tel:'],
+a[href^='mailto:'] {
+  white-space: nowrap;
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}

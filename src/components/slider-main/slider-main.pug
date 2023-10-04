@@ -1,0 +1,43 @@
+mixin slider-main(data)
+    .slider-main
+        .swiper(data-main-slider)
+            .slider-main__wrapper.swiper-wrapper
+                .swiper-slide.slider-main__slide
+                    .slider-main__slide-content
+                        .slider-main__slide-content-left
+                            h2 Качественный металлопрокат 
+                            p Напрямую от производителя
+                        .slider-main__slide-content-right
+                            +button({
+                                href: '#',
+                                text: 'Перейти в каталог'
+                            })
+                .swiper-slide.slider-main__slide
+                    .slider-main__slide-content
+                        .slider-main__slide-content-left
+                            h2 Качественный металлопрокат 
+                            p Напрямую от производителя
+                        .slider-main__slide-content-right
+                            +button({
+                                href: '#',
+                                text: 'Перейти в каталог'
+                            })
+                .swiper-slide.slider-main__slide
+                    .slider-main__slide-content
+                        .slider-main__slide-content-left
+                            h2 Качественный металлопрокат 
+                            p Напрямую от производителя
+                        .slider-main__slide-content-right
+                            +button({
+                                href: '#',
+                                text: 'Перейти в каталог'
+                            })
+            .slider-main__pagination_wrap
+                .slider-main__now-slide 01
+                .swiper-pagination.slider-main__pagination
+                .slider-main__total-slide 
+            
+        .swiper-button-prev.slider-main__button-prev
+            +icon('arrow-slider-left')
+        .swiper-button-next.slider-main__button-next
+            +icon('arrow-slider-right')

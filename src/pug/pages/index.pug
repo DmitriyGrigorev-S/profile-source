@@ -1,0 +1,14 @@
+extends ../template/layout
+
+include ../common/include
+
+block variables
+  - var title = "Index page"
+
+block content
+  section.top-section
+    .top-section__video
+      video(src="./assets/files/video.mp4" autoplay muted loop)
+    .top-section__content
+      .container
+        +slider-main({})

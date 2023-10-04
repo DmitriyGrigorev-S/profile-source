@@ -1,0 +1,43 @@
+.burger {
+  display: none;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  width: 42px;
+  height: 42px;
+
+  span {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 30px;
+    background-color: #fff;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 100%;
+      height: inherit;
+      background-color: inherit;
+      transform-origin: 50% 50%;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 0;
+      width: 100%;
+      height: inherit;
+      background-color: inherit;
+      transform-origin: 50% 50%;
+    }
+  }
+
+  @media (max-width: 1599px) {
+    display: block;
+  }
+}

@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $color-white;
+  font-family: $font-base;
+  font-size: $font-base-size;
+  font-weight: $font-weight-normal;
+  line-height: $font-base-lineheight;
+  color: $color-white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  &.ellipse {
+    background-image: url('../assets/images/required/icons/ellipse.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    background-color: $color-white;
+    background-origin: border-box;
+
+    @include media-max($tab) {
+      background-image: url('../assets/images/required/icons/ellipse_tablet.png');
+      background-size: 145%;
+    }
+
+    @include media-max($sm) {
+      background-size: 135%;
+    }
+
+    @media(max-width: 639px) {
+      background-size: 140%;
+    }
+
+    @include media-max($xs) {
+      background-image: url('../assets/images/required/icons/ellipse_mobile.png');
+      background-size: 480px 287px;
+    }
+  }
+}
+
+.img-decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  max-width: unset;
+  width: 994px;
+}
+
+.page {
+  min-width: 320px;
+  width: 100%;
+  overflow: hidden;
+
+  &--mt-minus-40 {
+    margin-top: -40px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 150px;
+
+  width: 100%;
+  max-width: $container + 300px;
+
+  @media (max-width: 1439px) {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    max-width: $container + 120px;
+  }
+
+  @media (max-width: 1023px) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    max-width: $container + 60px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    max-width: $container + 30px;
+  }
+
+  // @include media-max($xs) {
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  //   max-width: $container + 40px;
+  // }
+}
+
+picture {
+  display: block;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
